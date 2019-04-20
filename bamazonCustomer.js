@@ -17,7 +17,7 @@ connection.connect(function(err) {
 });
 
 function loadProducts() {
-  connection.query("SELECT * FROM products", function(err, res) {
+  connection.query("SELECT * FROM product", function(err, res) {
     if (err) throw err;
 
     console.table(res);
